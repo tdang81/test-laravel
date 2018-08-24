@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build:
-      context: ./
+      context: ./docker/
       dockerfile: app.dockerfile
     working_dir: /var/www
     volumes:
@@ -13,7 +13,7 @@ services:
 
   web:
     build:
-      context: ./
+      context: ./docker/
       dockerfile: web.dockerfile
     working_dir: /var/www
     volumes:
